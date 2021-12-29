@@ -58,7 +58,7 @@ function App() {
 				<section className="sort-form weather-content__sort">
 					<h2 className="visually-hidden">Форма сортировки</h2>
 					<form action="#" method="GET">
-						<Sort/>
+						<Sort sort={sort}/>
 						<FilterCities/>
 						<FilterProps/>
 					</form>
