@@ -4,13 +4,13 @@ const CitiesList = ({cities}) => {
     console.log(cities);
 
     const citiesList = cities.map((city, index) => {
-        
+        const temperature = city.temperature > 0 ? `+${city.temperature}°` : `${city.temperature}°`;
         return (
             <div className="small-card" key={`small_${index}`}>
                 <span className="small-card__city">
                     {city.city}
                 </span>
-                <span className="small-card__temperature">{city.temperature}°</span>
+                <span className="small-card__temperature">{temperature}</span>
                 <span className="icon icon--strips-small"></span>
             </div>
         )
